@@ -1,0 +1,12 @@
+file_format: "1"
+id: dya2
+name: DYA2 LiPo 4x6 Split
+type: shield
+url: https://github.com/cormoran/dya2-keyboard
+requires: [seeed_xiao]
+features:
+  - keys
+  - pointer
+siblings:
+  - dya2_left
+  - dya2_right

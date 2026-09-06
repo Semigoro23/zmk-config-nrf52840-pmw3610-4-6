@@ -1,0 +1,5 @@
+config SHIELD_DYA2_LEFT
+    def_bool $(shields_list_contains,dya2_left)
+
+config SHIELD_DYA2_RIGHT
+    def_bool $(shields_list_contains,dya2_right)
