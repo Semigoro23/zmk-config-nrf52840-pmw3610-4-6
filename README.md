@@ -24,6 +24,9 @@ half, BLE split transport, and a SideraKB PMW3610 on the right half.
 | R2 | D17 | P1.03 |
 | R3 | D18 | P1.05 |
 | R4 | D19 | P1.07 |
+| R5 (thumb row) | D1 | P0.03 |
+
+The eight thumb keys use the new R5 row. Wire the left thumb keys to R5+C1 through R5+C5, and the right thumb keys to R5+C1 through R5+C3. R5 is not present on the original four-row FFC, so it must be wired separately to XIAO D1. All switches still require the same diode direction as the main matrix.
 
 The configuration assumes diodes point from columns to rows (`col2row`). Verify
 the physical diode direction before applying power. D16/P0.31 is reserved for
@@ -58,6 +61,7 @@ row in the placeholder keymap.
 - ZMK: https://github.com/zmkfirmware/zmk
 - PMW3610 driver: https://github.com/badjeff/zmk-pmw3610-driver
 - Original DYA2 ZMK definition: https://github.com/cormoran/zmk-keyboard-dya2
+- Charybdis keymap adapted for this 56-key layout: https://github.com/Semigoro23/zmk-config/blob/main/config/charybdis.keymap
 
 This configuration is MIT-licensed. Retain upstream license notices for copied
 or redistributed dependencies.
