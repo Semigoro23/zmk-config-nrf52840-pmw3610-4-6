@@ -6,8 +6,8 @@ half, BLE split transport, and a SideraKB PMW3610 on the right half.
 
 ## Artifacts
 
-- `dya2_left.uf2`: flash to the left/central half.
-- `dya2_right.uf2`: flash to the right/peripheral half.
+- `dya2_left.uf2`: flash to the left/peripheral half.
+- `dya2_right.uf2`: flash to the right/central half (the half that connects to the host).
 - `settings_reset.uf2`: erase ZMK settings when re-pairing is required.
 
 ## Matrix wiring (both halves)
@@ -47,7 +47,7 @@ The SPI clock is limited to 2 MHz.
 
 Flash `dya2_left.uf2` to the left XIAO and `dya2_right.uf2` to the right XIAO.
 Reset both halves at approximately the same time so the split can pair. The
-left half advertises to the host as `DYA2`.
+right half, which contains the PMW3610, advertises to the host as `DYA2`.
 
 The first key on the Function layer is `&bootloader`, and the second is
 `&sys_reset`. The Function layer is held from the sixth key of the bottom-left
