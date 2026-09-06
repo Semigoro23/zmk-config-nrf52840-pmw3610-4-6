@@ -1,5 +1,1 @@
 #include "dya2.dtsi"
-
-&trackball_listener {
-    status = "okay";
-};
